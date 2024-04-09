@@ -22,11 +22,10 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors.light.background,
-        tabBarInactiveBackgroundColor: 'gainsboro',
+        tabBarInactiveBackgroundColor: "gainsboro",
         tabBarStyle: {
           backgroundColor: Colors.light.tint,
         },
-        
       }}
     >
       <Tabs.Screen name="index" options={{ href: null }} />
@@ -42,9 +41,10 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="orders"
         options={{
           title: "Orders",
+          headerShown: false,
           tabBarIcon: ({ color }) => <TabBarIcon name="list" color={color} />,
         }}
       />
